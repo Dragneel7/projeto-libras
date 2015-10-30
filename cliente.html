@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Enviando mensagens via websockets</title>
+</head>
+<body>
+  <div class="page-container">
+    <h1>Cliente para enviar para outros clientes (eg Prodeaf)</h1>
+    <ol>
+      <li>Para saber quais ids estão conectados digite: <strong>list</strong></li>
+      <li>Para enviar uma mensagem para alguem use o padrão <strong>id:mensagem</strong></li>
+    </ol>
+    <input id="bar" type="text" class="bar">
+    <div>
+      <button id="send" class="btn">Enviar</button>
+      <button id="connect" class="btn btn-green">Conectar</button>
+      <button id="disconnect" class="btn btn-red">Desconectar</button>
+    </div>
+    <div>
+      <textarea id="sent" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+  <script src="assets/js/socket.js"></script>
+</body>
+</html>

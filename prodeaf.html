@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Prodeaf Translator</title>
+</head>
+<body>
+
+  <div class="page-container no-wlauto">
+    <h1>Prodeaf Tradutor com sockets</h1>
+    <div>
+      <button id="connect" class="btn btn-green">Conectar</button>
+      <button id="disconnect" class="btn btn-red">Desconectar</button>
+    </div>
+
+  </div>
+
+  <script src="http://arquivos.weblibras.com.br/auto/wl-min.js"></script>
+  <script>
+    var wl = new WebLibras() || window;
+    
+    var eng = {};
+    eng.init = function() {};
+    eng.translate = function (msg) {
+      wl.OpenText(msg);
+    }
+    eng.init();
+
+</script> 
+<script src="assets/js/prodeaf.js"></script>
+
+</body>
+</html>
