@@ -66,7 +66,7 @@ wsServer.on('request', function(request) {
                     connection.sendUTF("id: " + i);
                 }
             } else {
-                var regex = /(\d+):([\w\s]+)/igm;
+                var regex = /(\d+):(.*)/igm;
                 var result = regex.exec(message.utf8Data);
                 console.log("...: " + result + " ...");
                 if (result !== null) {
